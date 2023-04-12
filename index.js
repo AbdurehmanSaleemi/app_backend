@@ -26,8 +26,8 @@ app.post('/payment', async (req, res) => {
             },
         ],
         mode: 'payment',
-        success_url: 'http://localhost:5173/cmp',
-        cancel_url: 'http://localhost:5173/cancel',
+        success_url: 'https://flirt.pages.dev/cmp',
+        cancel_url: 'https://flirt.pages.dev/cancel',
     });
     res.json({ id: session.id });
 });
